@@ -8,6 +8,22 @@ validated MSE, through a Monte Carlo simulation. I compared a True Model, define
 capture the assumed data-generating process, with a simpler Reduced Model and a more 
 complex Enlarged Model. By evaluating model performance over 5000 simulations, I
 aim to determine which criterion is more effective in identifying the correct model.
+## Methodology used for Data Generation 
+
+In each simulation, we generated a dataset containing three covariates X1,X2, and X3, 
+based on the following conditions: 
+Covariates X1 and X2 
+The covariates X1 and X2 were generated from a joint normal distribution with 
+parameters: 
+1.σx =0.85  
+2. ρ=0.85  
+3. β = [1, −1.4,0.6,0.2, −0.2,1]  
+4. σe =1 
+
+X3 is a binary variable with two levels, A and B, defined as: 
+1. X3 = A if X1 < 0  
+2. X3 = B if X1 ≥ 0 
+Each of the 5000 simulations was conducted with a sample size of 750.  
 
 ## Results
 
